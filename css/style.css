@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
 
 *{
@@ -223,7 +224,7 @@ img:hover{
   padding: 50px;
   min-width: 300px;
   max-width: 900px;
-  min-width: 800px;
+
   height: 200px;
   margin: 30px;
   border-radius: 20px;
@@ -319,7 +320,6 @@ img:hover{
   width: 900px;
   min-width: 300px;
   max-width: 950px;
-  min-width: 800px;
   height: 200px;
   margin: 30px;
   border-radius: 20px;
@@ -366,7 +366,7 @@ img:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: .1;
+  z-index: -1;
 }
 
 .skills h1{
@@ -597,11 +597,10 @@ img:hover{
   border-radius: 8px;
   max-width: 200px;
   align-items: center;
-  align-items: center;
   margin-top: 20px;
   justify-content: center;
   background-color: red;
-  color: rgb(255, 255, 255);
+  color: white;
   
 }
 
@@ -961,7 +960,6 @@ img:hover{
   }
     
   h1{ 
-    justify-content: right;
     position: relative;
     font-size: 30px;
     text-shadow: 2px 0px 70px rgb(238, 238, 238);;
@@ -1051,7 +1049,7 @@ img:hover{
       margin-left: 5%;
   }
   .education span{
-    padding-left: -55;
+    padding-left: -55px;
   }
 
   /*--- Skills --- */
@@ -1126,7 +1124,6 @@ img:hover{
   }
 
   h1{ 
-    justify-content: right;
     position: relative;
     font-size: 30px;
     text-shadow: 2px 0px 70px rgb(238, 238, 238);;
@@ -1176,7 +1173,6 @@ img:hover{
   }
 
   h1{ 
-    justify-content: right;
     position: relative;
     font-size: 30px;
     text-shadow: 2px 0px 70px rgb(238, 238, 238);;
