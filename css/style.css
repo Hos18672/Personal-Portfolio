@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-@use postcss-nested;
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
 
 *{
@@ -14,6 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/*================= Nav Bar menu ===================== */
 .wrapper{
   z-index: 500;
   background: #000000;
@@ -90,7 +89,7 @@ nav .content .links{
   display: none;
 }
 
-/* Dropdown Menu code start */
+/*====== Dropdown Menu code start ======== */
 .content .links ul{
   position: absolute;
   background: #171c24;
@@ -123,6 +122,7 @@ nav .content .links{
   top: 0;
 }
 
+/*================= Main Layout ===================== */
 .main{
  overflow: hidden;
  display: grid;
@@ -131,7 +131,7 @@ nav .content .links{
 
 }
 
-/* about me */
+/*=================  about me =================  */
 
 .aboutMe {
   display: flex;
@@ -145,7 +145,6 @@ nav .content .links{
   height: 950px;
   -webkit-box-shadow: 1px 14px 24px -7px #000000; 
 }
-
 .aboutMe .tag{
   display: grid;
   place-items: center;
@@ -153,7 +152,6 @@ nav .content .links{
 .lastname{
   color: red;
   text-shadow: 2px 0px 70px red;;
-
 }
 h1{ 
   justify-content: right;
@@ -207,7 +205,7 @@ img:hover{
   background-color: red;
 }
 
-/* Work Experience */
+/*=================  Work Experience =================  */
 
 .work-experience{
   display: grid;
@@ -217,7 +215,6 @@ img:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 .work-experience .tag{
@@ -256,10 +253,9 @@ img:hover{
   border-radius: 20px;
   background-color: rgb(0, 0, 0);
 }
-
 .work-experience .dates p{
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: 23px;
   padding: 70px 12px 10px 35px;
 }
 
@@ -267,8 +263,7 @@ img:hover{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
 }
-
-/*Education*/
+/* ================= Education  =================*/
 
 .education {
   display: grid;
@@ -305,7 +300,6 @@ img:hover{
   text-shadow: 2px 10px 70px rgb(180, 180, 180);
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-
 }
 .educatione.dates p{
   color: rgb(255, 255, 255);
@@ -359,7 +353,7 @@ img:hover{
   font-size: 25px;
 }
 
-/* Skills */
+/*  ================= Skills  ================= */
 
 .skills{
   color: rgb(0, 0, 0);
@@ -396,10 +390,17 @@ img:hover{
   font-size: 30px;
 }
 
-/* INDIVIDUAL BAR'S STYLING, SAME GOES WITH OTHER BARS */
-
-.bar-1 {
-  width: 50%;
+/*----- INDIVIDUAL BAR'S STYLING, SAME GOES WITH OTHER BARS ------ */
+.bar-1, 
+.bar-2,
+.bar-3,
+.bar-4,
+.bar-5,
+.bar-6,
+.bar-7,
+.bar-8,
+.bar-9,
+.bar-10{
   background-color: rgb(0, 60, 255);
   -webkit-box-shadow: inset 1px -30px 39px 10px rgba(59, 59, 59, 0.35); 
   box-shadow: inset 1px -30px 39px 10px rgba(58, 58, 58, 0.35);
@@ -412,294 +413,39 @@ img:hover{
   height: 40px;
   text-align: center;
   font-size: 25px;
- 
-
+}
+.bar-1 {
+  width: 50%;
 }
 .bar-2 {
   width: 55%;
-  background-color: rgb(0, 60, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(59, 59, 59, 0.35); 
-  box-shadow: inset 1px -30px 39px 10px rgba(58, 58, 58, 0.35);
-  color: #fff;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
 }
 .bar-3 {
   width: 60%;
-  background-color: rgb(0, 60, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(59, 59, 59, 0.35); 
-  box-shadow: inset 1px -30px 39px 10px rgba(58, 58, 58, 0.35);
-  color: #fff;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
 }
 .bar-4 {
   width: 80%;
-  background-color: rgb(0, 60, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(59, 59, 59, 0.35); 
-  box-shadow: inset 1px -30px 39px 10px rgba(58, 58, 58, 0.35);
-  color: #fff;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
 }
-
-/* HERE'S ONE WITH GRADIENT WHICH LOOKS SUPER COOL */
-
 .bar-5 {
   width: 30%;
-  color: #fff;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
-  background-color: rgb(0, 60, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(59, 59, 59, 0.35); 
-  box-shadow: inset 1px -30px 39px 10px rgba(58, 58, 58, 0.35);
 }
 .bar-6 {
   width: 40%;
-  color: #fff;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
-  background-color: rgb(0, 60, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(59, 59, 59, 0.35); 
-  box-shadow: inset 1px -30px 39px 10px rgba(58, 58, 58, 0.35);
 }
 .bar-7 {
   width: 70%;
-  color: #fff;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
-  background-color: rgb(0, 60, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(59, 59, 59, 0.35); 
-  box-shadow: inset 1px -30px 39px 10px rgba(58, 58, 58, 0.35);
 }
 .bar-8 {
   width: 60%;
-  color: #fff;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
-  background-color: rgb(0, 60, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(59, 59, 59, 0.35); 
-  box-shadow: inset 1px -30px 39px 10px rgba(58, 58, 58, 0.35);
 }
 .bar-9 {
   width: 80%;
-  color: #fff;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
-  background-color: rgb(0, 60, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(59, 59, 59, 0.35); 
-  box-shadow: inset 1px -30px 39px 10px rgba(58, 58, 58, 0.35);
 }
 .bar-10 {
   width: 70%;
-  color: #fff;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
-  background-color: rgb(0, 60, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(59, 59, 59, 0.35); 
-  box-shadow: inset 1px -30px 39px 10px rgba(58, 58, 58, 0.35);
 }
 
-.hobbies {
-  overflow: hidden;
-  background-color: white;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  display: block;
-  color: rgb(0, 0, 0);
-  height: 550px;
-
-}
-.hobbies .list-wrapper{
-  text-align: center;
-  color: rgb(0, 0, 0);
-  margin-left: 40%;
-}
-.hobbies h1{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-shadow: 2px 0px 70px rgb(56, 56, 56);;
-}
-
-.language .tag{
-  text-align: center;
-  color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0;
-}
-
-.language{
-  text-align: center;
-}
-.language h1{
-  padding-top: 5%;
-  margin-bottom: 5%;
-  text-shadow: 2px 0px 70px rgb(68, 68, 68);;
-}
-
-
-.list-wrapper {
-  position:relative;
-
-}
-.list-item-wrapper {
-  margin-top:10px;
-  position:relative;
-}
-.list-bullet {
-  float:left;
-  margin-right:20px;
-  background:#ff0000;
-  height:40px;
-  width:40px;
-  line-height:30px;
-  border-radius:100px;
-  padding: 5px;
-  font-size: 20px;
-  font-weight:700;
-  color:white;
-  text-align:center;
-  -webkit-box-shadow: 5px 5px 50px 5px rgba(255, 2, 2, 0.671); 
-  box-shadow: 5px 5px 50px 5px rgba(255, 9, 9, 0.959);
-}
-.list-item {
-  display:table-row;
-  vertical-align:auto;
-}
-.list-title {
-  font-size: 30px;
-  font-weight:500;
-}
-
-.red-line {
-  background:#FF4949;
-  z-index:-1;
-  width:1px;
-  height:100%;
-  position:absolute;
-  left:15px;
-}
-.white-line {
-  background:#FFF;
-  z-index:-1;
-  top:0px;
-  width:1px;
-  height:100%;
-  position:absolute;
-  left:15px;
-}
-
-.bar-12 {
-  width: 100%;
-  color: rgb(0, 0, 0);
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
-  background-color: rgb(0, 255, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(8, 206, 255, 0.973); 
-  box-shadow: inset 1px -30px 39px 10px rgb(3, 196, 255);
-}
-
-.bar-13 {
-  width: 50%;
-  color: rgb(0, 0, 0);
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
-  background-color: rgb(0, 255, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(8, 206, 255, 0.973); 
-  box-shadow: inset 1px -30px 39px 10px rgb(3, 196, 255);
-}
-
-.bar-14 {
-  width: 80%;
-  color: rgb(0, 0, 0);
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 25px;
-  background-color: rgb(0, 255, 255);
-  -webkit-box-shadow: inset 1px -30px 39px 10px rgba(8, 206, 255, 0.973); 
-  box-shadow: inset 1px -30px 39px 10px rgb(3, 196, 255);
-}
-
-.language{
- margin-bottom: 10%;
-}
-/* Contact */
+/* ================  Footer  ================ */
 
 .footer{
   display: flex;
@@ -721,7 +467,6 @@ img:hover{
   font-size: 1rem;
 }
 
-
 .dummy-text{
   position: absolute;
   top: 50%;
@@ -737,8 +482,7 @@ img:hover{
   margin: 5px 0;
 }
 
-/* Contact*/
-
+/* ================ Contact ================*/
 .container {
   flex: 0 1 700px;
   margin: auto;
@@ -916,6 +660,7 @@ img:hover{
   margin: 0 5px;
 }
 
+/* ================ Animations start ================ */
 @keyframes status{
    0%{
      opacity: 1;;
@@ -932,12 +677,16 @@ img:hover{
   }
 
 }
-/* Responsive code start */
+/* ================ Animations end ================= */
+
+/* ================ Responsive code 1250px start ================ */
 @media screen and (max-width: 1250px){
   .wrapper nav{
     max-width: 100%;
     padding: 0 20px;
   }
+
+  /*--- Nav bar --- */
   nav .content .links{
     margin-left: 30px;
   }
@@ -950,9 +699,15 @@ img:hover{
   .wrapper .search-box input{
     padding: 0 100px 0 15px;
   }
+
+  /*--- about me --- */
   .aboutMe{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    text-align: center;
+    height: 1100px;
   }
   .foto-container{
     display: flex;
@@ -973,40 +728,22 @@ img:hover{
       font-size: 25px;
       padding-bottom: 70px;
   }
-  .aboutMe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 1100px;
-  }
-.hello{
+
+ .hello{
     margin-bottom:  -10%;
   }
 }
+/* ================ Responsive code 1250px end ================ */
 
+/* ================ Responsive code 950px start ================ */
 @media screen and (max-width: 950px){
+  /*-- Nav bar ---*/
   .wrapper .menu-icon{
     display: block;
   }
   .wrapper #show-menu:checked ~ .menu-icon i::before{
     content: "\f00d";
   }
- 
-  .aboutMe{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .foto{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-  }
-
 
   nav .content .links{
     display: block;
@@ -1061,6 +798,22 @@ img:hover{
     line-height: 30px;
     border-radius: 5px!important;
   }
+   /*-- About me ---*/
+  .aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foto{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+
+   /*-- Work experiences ---*/
   .work-experience{
     display: flex;
     flex-direction: column;
@@ -1108,9 +861,7 @@ img:hover{
   }
 
   
-    /* education */
-
-
+  /* ---- education ---- */
   .education{
       display: flex;
   
@@ -1142,18 +893,20 @@ img:hover{
       text-align: center;
       margin-top: 30px;
   }
-  
+     /*-- Skills ---*/
   .skills h1{
     color: rgb(0, 0, 0);
     padding-bottom: 50px;
     padding-right: 10%;
-}
-.bar-holder{
-  font-size: 25px;
-}
+ }
+ .bar-holder{
+    font-size: 25px;
+ }
 
 }
+/* ================ Responsive code 950px end ================ */
 
+/* ================ Responsive code 700px start ================ */
 @media screen and (max-width: 700px){
 
   .foto{
@@ -1183,11 +936,13 @@ img:hover{
     flex-direction: column;
     margin-bottom: 10px;
     font-size: 10px;
-
   }
  }
+/* ================ Responsive code 700px end ================ */
 
+/* ================ Responsive code 600px start ================ */
 @media screen and (max-width: 600px){
+  /*--- About me --- */
   .foto{
     width: 300px;
     height: auto;
@@ -1209,15 +964,13 @@ img:hover{
     justify-content: right;
     position: relative;
     font-size: 30px;
-    margin-left: -10%;
     text-shadow: 2px 0px 70px rgb(238, 238, 238);;
   }
   p{
     font-size: 25px;
-    margin-left: -10%;
     text-shadow: 2px 0px 70px  rgb(238, 238, 238);;
   }
- 
+    /*--- work-experience --- */
   .work-experience{
     display: flex;
     flex-direction: column;
@@ -1263,16 +1016,15 @@ img:hover{
     margin-left: 5%;
    }
 
-    /* education */
+    /* --- education ---- */
 
   .education{
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-  
-  }
 
+  }
   .education  .tag{
       display: flex;
       width: 300px;
@@ -1302,7 +1054,7 @@ img:hover{
     padding-left: -55;
   }
 
-  
+  /*--- Skills --- */
   .skills h1{
     color: rgb(0, 0, 0);
     padding-bottom: 50px;
@@ -1323,141 +1075,21 @@ img:hover{
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   margin-bottom: 20px;
-
   font-size: 16px;
 }
 
 /* INDIVIDUAL BAR'S STYLING, SAME GOES WITH OTHER BARS */
 
-.bar-1 {
-  width: 50%;
-  height: 40px;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  font-size: 20px;
-  padding-top: 5px;
-  -o-border-radius: 20px;
-}
-.bar-2 {
-  width: 55%;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 5px;
-  height: 40px;
-}
-.bar-3 {
-  width: 60%;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 5px;
-  height: 40px;
-}
-.bar-4 {
-  width: 80%;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 5px;
-  height: 40px;
-}
-
-/* HERE'S ONE WITH GRADIENT WHICH LOOKS SUPER COOL */
-
-.bar-5 {
-  width: 30%;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 5px;
-  height: 40px;
-}
-.bar-6 {
-  width: 40%;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 5px;
-  height: 40px;
-}
-.bar-7 {
-  width: 70%;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 5px;
-  height: 40px;
-}
-.bar-8 {
-  width: 60%;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 5px;
-  height: 40px;
-}
-.bar-9 {
-  width: 80%;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 5px;
-  height: 40px;
-}
-.bar-10 {
-  width: 70%;
+.bar-1, 
+.bar-2,
+.bar-3,
+.bar-4,
+.bar-5,
+.bar-6,
+.bar-7,
+.bar-8,
+.bar-9,
+.bar-10{
   color: #fff;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -1469,56 +1101,13 @@ img:hover{
   padding-top: 5px;
   font-weight: 400;
   height: 40px;
-  }
-
-.bar-12 {
-  width: 100%;
-  color: rgb(0, 0, 0);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-size: 20px;
-  padding-top: 5px;
-  font-weight: 400;
-  height: 40px;
-}
-
-.bar-13 {
-  width: 50%;
-  color: rgb(0, 0, 0);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  padding-top: 5px;
-  height: 40px;
-}
-
-.bar-14 {
-  width: 80%;
-  color: rgb(0, 0, 0);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  font-size: 20px;
-  padding-top: 5px;
-  font-weight: 400;
-  height: 40px;
-  }
+ }
 
 }
-@media screen and (max-width: 520px) {
+/* ================ Responsive code 600px end ================ */
 
+/* ================ Responsive code 520px start ================ */
+@media screen and (max-width: 550px) {
   .foto{
     width: 200px;
     height: auto;
@@ -1547,7 +1136,9 @@ img:hover{
     text-shadow: 2px 0px 70px  rgb(238, 238, 238);;
   }
 }
+/* ================ Responsive code 520px end ================ */
 
+/* ================ Responsive code 450px start ================ */
 @media screen and (max-width: 450px){
   .wrapper nav{
     padding: 0 10px;
@@ -1595,7 +1186,6 @@ img:hover{
     text-shadow: 2px 0px 70px  rgb(238, 238, 238);;
   }
   
-
   .work-experience{
     display: flex;
     flex-direction: column;
@@ -1609,7 +1199,6 @@ img:hover{
       color: black;
       max-width: 100px;
   }
-
 
   .work-experience{
     display: flex;
@@ -1641,7 +1230,9 @@ img:hover{
   .work-experience .dates p{
     color: rgb(255, 255, 255);
     font-size: 25px;
-    margin-left: 5%;
+    margin-left: 15%;
+    position: relative;
+    bottom: 10%;
   }
     /* education */
   .education{
@@ -1680,7 +1271,9 @@ img:hover{
       align-items: center;
       justify-content: center;
       text-align: center;
-      margin-left: 5%;
+      margin-left: 17%;
+      position: relative;
+      bottom: 10%;
   }
   .education span{
     font-size: 20px;
@@ -1691,11 +1284,11 @@ img:hover{
     font-size: 30px;
   
   }
-
-
 }
+/* ================ Responsive code 450px end ================ */
 
-@media screen and (max-width: 330px){
+/* ================ Responsive code 330px start ================ */
+@media screen and (max-width: 350px){
   .list-title {
     font-size: 15px;
   }
@@ -1707,9 +1300,9 @@ img:hover{
   .foto{
     margin: auto;
   }
-
   #status{
     top: 110px;
     left: 20%;
   }
 }
+/* ================ Responsive code 330px end ================ */

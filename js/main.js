@@ -14,7 +14,6 @@
             'Accept': 'application/json'
         }
       }).then(response => {
-
         status.classList.add('success');
         status.innerHTML = "Thanks";
         form.reset()
