@@ -161,7 +161,9 @@ h1{
   font-size: 70px;
   text-shadow: 2px 0px 70px rgb(238, 238, 238);;
 }
-
+p{
+  font-size: 30px;
+}
 .foto{
   display: flex;
   align-items: center;
@@ -968,7 +970,7 @@ img:hover{
       font-size: 50px;
   }
   p{
-      font-size: 20px;
+      font-size: 25px;
       padding-bottom: 70px;
   }
   .aboutMe{
@@ -1198,16 +1200,20 @@ img:hover{
     font-size: 20px;
     font-weight:500;
   }
+  .aboutMe{
+    position: relative;
+    top: -10%;
+  }
     
   h1{ 
     justify-content: right;
     position: relative;
-    font-size: 40px;
+    font-size: 30px;
     margin-left: -10%;
     text-shadow: 2px 0px 70px rgb(238, 238, 238);;
   }
   p{
-    font-size: 30px;
+    font-size: 25px;
     margin-left: -10%;
     text-shadow: 2px 0px 70px  rgb(238, 238, 238);;
   }
@@ -1524,6 +1530,21 @@ img:hover{
 
   .education h1{
     color: black;
+  }
+  .aboutMe{
+    position: relative;
+    top: -15%;
+  }
+
+  h1{ 
+    justify-content: right;
+    position: relative;
+    font-size: 30px;
+    text-shadow: 2px 0px 70px rgb(238, 238, 238);;
+  }
+  p{
+    font-size: 20px;
+    text-shadow: 2px 0px 70px  rgb(238, 238, 238);;
   }
 }
 
