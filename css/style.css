@@ -175,7 +175,7 @@ p{
   
 }
 
-img:hover{
+.foto:hover{
   transform: scale(1.02);
   transition: 1s ease-out ;
   -webkit-box-shadow: 1px 27px 50px -5px rgba(128, 126, 126, 0.918); 
@@ -276,16 +276,6 @@ img:hover{
   flex-direction: column;
 }
 
-.shadow-line span {
-  width: 100%;
-  height: 20px;
-  color: rgba(255, 0, 0, 0);
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  -webkit-box-shadow: -5px 21px 45px -7px #696969; 
-  box-shadow: -5px 1px 5px -70px #444444;
-}
-
 .education .dates{
   color: white;
   padding-right: 50px;
@@ -310,7 +300,7 @@ img:hover{
 .education h1{
   color: rgb(0, 0, 0);
   padding-top: 50px;
-  text-shadow: 2px 10px 70px rgb(255, 255, 255);
+  text-shadow: 2px 10px 70px rgb(58, 58, 58);
 }
 
 .education .tag{
@@ -358,7 +348,6 @@ img:hover{
 .skills{
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-  box-shadow: 1px 14px 24px -7px #d1d1d1;
   display: flex;
   overflow: hidden;
   padding-bottom: 100px;
@@ -445,6 +434,118 @@ img:hover{
   width: 70%;
 }
 
+/* ================  Preojects  ================ */
+
+
+.porjects {
+  display: grid;
+  overflow: hidden;
+  padding-bottom: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.porjects .project-item{
+  color: white;
+  padding-right: 50px;
+  margin: 0;
+  min-width: 300px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  left: -50px;
+  font-weight: 500;
+  text-shadow: 2px 10px 70px rgb(180, 180, 180);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.porjects .project-item p{
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  padding: 50px 2px 0px 30px;
+}
+.porjects h1{
+  color: rgb(0, 0, 0);
+  padding-top: 50px;
+  text-shadow: 2px 10px 70px rgb(58, 58, 58);
+}
+
+.porjects .project-item .portfolio-img{
+  width: 305px;
+  height: 200px;
+  border-radius: 15px;
+}
+.porjects .project-item .mnf-img{
+  width: 95px;
+  height: 190px;
+  margin-top: 5px;
+  margin-left: 20%;
+  border-radius: 12px;
+}
+
+.porjects .project-item .graph-img{
+  width: 180px;
+  height: 180px;
+  margin-top: 5px;
+  margin-left: 20%;
+  border-radius: 12px;
+}
+
+.porjects .porject-tag{
+  font-size: 20px;
+  display: flex;
+  padding: 50px;
+  width: 900px;
+  min-width: 300px;
+  max-width: 950px;
+  height: 200px;
+  margin: 30px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 10px 70px rgb(207, 207, 207);
+}
+.porjects .project-item {
+  color: white;
+  padding-right: 50px;
+  margin: 0;
+  min-width: 300px;
+  width: 305px;
+  height: 200px;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 2px 10px 70px rgba(156, 156, 156, 0.658);
+}
+
+.porjects .project-item  p{
+  color: rgb(255, 255, 255);
+  margin-top: 15%;
+  font-size: 25px;
+  text-shadow: 2px 0px 70px rgb(255, 192, 192);
+  padding: 50px 2px 0px 30px;
+}
+
+.porjects span{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+}
+
+.porjects .porject-tag .content {
+ margin-left: 10%;
+}
+.porjects .porject-tag .content div a{
+  text-decoration: none;
+  color: blue;
+}
+.porjects .porject-tag .content div a:hover{
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  border-bottom: 3px solid red;
+}
 /* ================  Footer  ================ */
 
 .footer{
@@ -897,11 +998,46 @@ img:hover{
     color: rgb(0, 0, 0);
     padding-bottom: 50px;
     padding-right: 10%;
- }
- .bar-holder{
-    font-size: 25px;
- }
+  }
+  .bar-holder{
+      font-size: 25px;
+  }
 
+  /*--- Projects ---*/
+  .porjects{
+    display: flex;
+
+  }
+  .porjects  h1{
+      color: rgb(0, 0, 0); 
+  }
+  .porjects  .porject-tag{
+      display: flex;
+      width: 400px;
+      height: 100%;
+      min-width: 100px;
+      flex-direction: column;
+  }
+  .porjects  div.project-item{
+      min-width: 400px;
+      max-height: 200px;
+      margin-top: 0;
+      padding-top: -200px;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+  }
+  .porjects .project-item p{
+      color: rgb(0, 0, 0);
+      font-size: 35px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 30px;
+  }
+  .porjects .project-item .portfolio-img{
+    width:115%;
+    height: 115%;
+  }
 }
 /* ================ Responsive code 950px end ================ */
 
@@ -1101,6 +1237,50 @@ img:hover{
   height: 40px;
  }
 
+   /*--- Projects ---*/
+   .porjects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .porjects  h1{
+      color: rgb(0, 0, 0); 
+  }
+  .porjects  .porject-tag{
+    display: flex;
+    width: 300px;
+    height: 100%;
+    min-width: 100px;
+    flex-direction: column;
+  }
+  .porjects  div.project-item{
+    min-width: 295px;
+    max-height: 200px;
+    margin-top: 0;
+    width: 300px;
+    padding-top: -200px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .porjects .project-item p{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5%;
+  }
+  .porjects .project-item .portfolio-img{
+    width:115%;
+    height: 115%;
+  }
+  .porjects .project-item .portfolio-img{
+    width:120%;
+    height: 100%;
+  }
+
 }
 /* ================ Responsive code 600px end ================ */
 
@@ -1203,7 +1383,6 @@ img:hover{
       margin-top: 25px;
       color: black;
       font-size: 30px;
-
   }
   .work-experience .tag{
     display: flex;
@@ -1231,13 +1410,6 @@ img:hover{
     bottom: 10%;
   }
     /* education */
-  .education{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-  
-  }
   .education  h1{
     font-size: 30px;
     color: rgb(255, 255, 255);
@@ -1280,6 +1452,40 @@ img:hover{
     font-size: 30px;
   
   }
+
+
+    /*--- Projects ---*/
+    .porjects  h1{
+        color: rgb(0, 0, 0); 
+    }
+    .porjects  .porject-tag{
+      display: flex;
+      width: 220px;
+      height: 100%;
+      min-width: 100px;
+      flex-direction: column;
+    }
+    .porjects  div.project-item{
+      min-width: 220px;
+      max-height: 200px;
+      margin-top: 0;
+      width: 220px;
+      padding-top: -200px;
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+    .porjects .project-item p{
+      color: rgb(0, 0, 0);
+      font-size: 25px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 5%;
+    }
+    .porjects .project-item .portfolio-img{
+      width:130%;
+      height: 100%;
+    }
 }
 /* ================ Responsive code 450px end ================ */
 
