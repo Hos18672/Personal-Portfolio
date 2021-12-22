@@ -8,6 +8,7 @@
   <!--========================= Links start ==============================-->
   <link rel="stylesheet" href="./css/style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://kit.fontawesome.com/7c89646d05.js" crossorigin="anonymous"></script>
   <!--========================= Links end ================================-->
 </head>
 <body>
@@ -17,7 +18,7 @@
       <input type="checkbox" id="show-menu">
       <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
       <div class="content">
-         <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+         <div class="logo"><a href="#">R<span>H</span></a></div>
          <ul class="links"  >
             <li><a href="#aboutMe">About</a></li>
             <li><a href="#experience" >Experience</a> </li>
@@ -43,12 +44,19 @@
             </p>
             <div  class="download">
               <a   id="download" href="./pdf/Lebenslauf-Reza-Hossaini.pdf#" download="proposed_file_name">Download CV</a>
-            </div>
+            </div> 
+            <div class="socials">
+            <a href="https://www.linkedin.com/in/reza-hossaini-bb5ab614b/" class="items one"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.xing.com/profile/reza_hosseini15/cv" class="items two"><i class="fab fa-xing-square"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100008372049580" class="items three"><i class="fab fa-facebook-square"></i></a>
         </div>
+        </div>
+       
         <div class="foto-container"></div>
         <div >
             <img class="foto" src="images/foto.png" alt="my picture">
         </div>
+   
       </div>
       <!-- About me section end -->
 
@@ -165,7 +173,7 @@
        </div>
        <div class="porject-tag"> 
         <div class="project-item"> 
-          <img class="mnf-img" src="./images/mfn-home.png"/>
+          <img class="mnf-img" src="./images/mfn.png"/>
         </div> 
         <div class="content">
           <h2> 2nd project</h2>
@@ -214,14 +222,13 @@
                   <form class="app-form" id="my-form"  action="https://formspree.io/f/xdobovjk"
                     method="POST">
                     <div class="app-form-group">
-                      <input class="app-form-control" placeholder="NAME" type="text" value="">
+                      <input class="app-form-control" placeholder="NAME" type="text" value="" required>
                     </div>
                     <div class="app-form-group">
-                      <input name="email" class="app-form-control" id="email" type="email" placeholder="EMAIL">
+                      <input name="email" class="app-form-control" id="email" type="email" placeholder="EMAIL" required>
                     </div>
-                    <div class="app-form-group message">
-                      <textarea name="message" class="app-form-control" id="message" placeholder="MESSAGE">
-                      </textarea>
+                    <div class="app-form-group message"> 
+                      <textarea name="message" class="app-form-control" id="message" placeholder="MESSAGE"></textarea>      
                     </div>
                     <div class="" id="status">
                     </div>
