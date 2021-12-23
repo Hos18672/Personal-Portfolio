@@ -393,7 +393,7 @@ p{
 }
 
 .bar-holder {
-  width: 50%;
+  width: 80%;
   max-width: 50%;
   -webkit-box-shadow: inset 0px 40px 37px -2px rgba(141, 141, 141, 0.38); 
   box-shadow: inset 0px 40px 37px -2px rgba(117, 117, 117, 0.38);
@@ -429,6 +429,34 @@ p{
   height: 40px;
   text-align: center;
   font-size: 25px;
+}
+
+.bar-1 img, 
+.bar-2 img,
+.bar-3 img,
+.bar-4 img,
+.bar-5 img,
+.bar-6 img,
+.bar-7 img,
+.bar-8 img,
+.bar-9 img{
+  width: 30px;
+  padding-top: 5px;
+  margin: 0 auto;
+}
+
+
+.bar-1 span, 
+.bar-2 span,
+.bar-3 span,
+.bar-4 span,
+.bar-5 span,
+.bar-6 span,
+.bar-7 span,
+.bar-8 span,
+.bar-9 span{
+  position: relative;
+  bottom: 7px;
 }
 .bar-1 {
   width: 50%;
@@ -576,10 +604,53 @@ p{
   text-decoration: none;
   color: blue;
 }
-.porjects .porject-tag .content div a:hover{
-  text-decoration: none;
-  color: rgb(255, 0, 0);
-  border-bottom: 3px solid red;
+
+#arrow{
+  font-size: 30px;
+  padding-top: 2px;
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+}
+#arrow:hover{
+  color: rgb(0, 153, 255);
+}
+.arrow-g{
+  margin-right: 15px;
+}
+.content .m {
+  padding-top: 5px;
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: 200px;
+  justify-content: right;
+}
+.content .m2 {
+  padding-top: 5px;
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: 243px;
+  justify-content: right;
+}
+.content .m3 {
+
+  position: relative;
+  left: 225px;
+
+}
+.content .m .icons {
+  display: flex;
+}
+.content .m .icon1 {
+  position: relative;
+  left: 40px;
+}
+.content .m .icons img {
+   width: 40px;
+   position: relative;
+   right: 180px;
+   bottom: 10px;
 }
 /* ================  Footer  ================ */
 
@@ -812,6 +883,31 @@ p{
 }
 /* ================ Animations end ================= */
 
+
+@media screen and (max-width: 3200px){
+  .bar-holder {
+    width: 30%;
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 2800px){
+  .bar-holder {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 2200px){
+  .bar-holder {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 1500px){
+  .bar-holder {
+    width: 70%;
+    max-width: 70%;
+  }
+}
 /* ================ Responsive code 1250px start ================ */
 @media screen and (max-width: 1250px){
   .wrapper nav{
@@ -876,6 +972,12 @@ p{
     position: relative;
     top: -100%;
   }
+
+  
+.bar-holder {
+  width: 80%;
+  max-width: 80%;
+}
 }
 /* ================ Responsive code 1250px end ================ */
 
@@ -1090,6 +1192,56 @@ p{
     width:115%;
     height: 115%;
   }
+
+  #arrow{
+    font-size: 30px;
+    margin-left: 25px;
+    padding-top: 2px;
+    color: rgb(0, 0, 0);
+  }
+  #arrow:hover{
+    font-size: 30px;
+    margin-left: 25px;
+    color: rgb(0, 153, 255);
+  }
+  .content .m  {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 400px;
+  }
+  .content .m a {
+    position: relative;
+    right: 82%;
+  }
+
+  .content .m .link-name {
+    position: relative;
+    right: 210px;
+  }
+  
+  .content .m .icons {
+    position: relative;
+    margin-left: 10px;
+  }
+  .content .m .icons img {
+    width: 40px;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .content .m2 .icons {
+    width: 40px;
+    position: relative;
+    left: 45px;
+  }
+  .content .m2  .link-name{
+    margin-right: 80px;
+  }
+  .content .m2  a{
+    margin-right: 80px;
+  }
 }
 /* ================ Responsive code 950px end ================ */
 
@@ -1283,6 +1435,8 @@ p{
   height: 40px;
  }
 
+
+
    /*--- Projects ---*/
    .porjects{
     display: flex;
@@ -1327,6 +1481,32 @@ p{
     height: 100%;
   }
 
+  .content .m a {
+    position: relative;
+    right: 123%;
+  }
+
+  .content .m .link-name {
+    position: relative;
+    right: 210px;
+  }
+  
+  .content .m .icons {
+    position: relative;
+    margin-left: 10px;
+  }
+  .content .m .icons img {
+    width: 40px;
+    position: relative;
+    right: 230px;
+    bottom: 10px;
+  }
+
+  .content .m2 .icons {
+    position: relative;
+    right: 300px;
+
+  }
 }
 /* ================ Responsive code 600px end ================ */
 
@@ -1535,6 +1715,36 @@ p{
       width: 135%;
       margin-left: -10%;
     }
+
+
+    .content .m a {
+      position: relative;
+      right: 210%;
+    }
+  
+    .content .m .link-name {
+      position: relative;
+      right: 220px;
+    }
+    .content .m .link-name2 {
+      position: relative;
+      right: 210px;
+    }
+    .arrow{
+      margin-left: 10px;
+    }
+    
+    .content .m .icons {
+      position: relative;
+      margin-left: 10px;
+    }
+    .content .m .icons img {
+      width: 40px;
+      position: relative;
+      right: 260px;
+      bottom: 10px;
+    }
+
 }
 /* ================ Responsive code 450px end ================ */
 
