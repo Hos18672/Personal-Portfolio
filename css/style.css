@@ -208,15 +208,14 @@ p{
  display:flex;
  flex-direction: row;
 }
-.socials a i {
+.socials a img {
   color: rgb(255, 255, 255);
   padding: 10px;
-  font-size: 40px;
+  width: 60px;
   position: relative;
   top: 100px;
 }
-.socials a i:hover {
-    color: rgb(0, 217, 255);
+.socials a img:hover {
     transform: scale(1.2);
     transition: 0.2s ease-out ;
     border-radius: 20px;
