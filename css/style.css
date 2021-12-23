@@ -874,7 +874,7 @@ p{
   }
   .download{
     position: relative;
-    top: -150%;
+    top: -100%;
   }
 }
 /* ================ Responsive code 1250px end ================ */
@@ -1373,7 +1373,7 @@ p{
 /* ================ Responsive code 520px end ================ */
 
 /* ================ Responsive code 450px start ================ */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 310px){
   .wrapper nav{
     padding: 0 10px;
   }
@@ -1538,11 +1538,15 @@ p{
       width:130%;
       height: 100%;
     }
+    .mnf-img{
+      width: 210px;
+      margin-left: -5%;
+    }
 }
 /* ================ Responsive code 450px end ================ */
 
 /* ================ Responsive code 330px start ================ */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 250px){
   .list-title {
     font-size: 15px;
   }
