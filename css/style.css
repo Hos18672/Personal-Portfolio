@@ -1538,9 +1538,12 @@ p{
       width:130%;
       height: 100%;
     }
+    .porjects .fn-item{
+      height: 140px;
+    }
     .mnf-img{
-      width: 210px;
-      margin-left: -5%;
+      width: 135%;
+      margin-left: -10%;
     }
 }
 /* ================ Responsive code 450px end ================ */
