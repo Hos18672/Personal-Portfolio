@@ -1,4 +1,11 @@
 
+   import AOS from 'aos';
+   import 'aos/dist/aos.css'; // You can also use <link> for styles
+   // ..
+   AOS.init();
+   
+   
+   
     var form = document.getElementById("my-form");
     const nav_menu = document.getElementById("menu_item");
     const navs = document.querySelector('.content .links');
