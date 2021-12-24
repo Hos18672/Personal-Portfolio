@@ -37,16 +37,16 @@
   <div class="main">
       <!-- About me section start -->
       <section class="aboutMe " id="aboutMe">
-          <div class="tag" >
-            <p class="hello" data-aos="fade-right" > Hello my name is </p>
-            <h1 class="title" data-aos="fade-right" >Reza  <span class="lastname"> Hossaini</span> </h1>
-            <p class="text" " data-aos="fade-right" >
+          <div class="tag"  data-aos="fade-right">
+            <p class="hello" > Hello my name is </p>
+            <h1 class="title"  >Reza  <span class="lastname"> Hossaini</span> </h1>
+            <p class="text" " >
                 I'M a Android and Web Developer
             </p>
-            <div  class="download" data-aos="fade-right" >
+            <div  class="download">
               <a   id="download" href="./pdf/Lebenslauf-Reza-Hossaini.pdf#" download="proposed_file_name">Download CV</a>
             </div> 
-            <div class="socials" data-aos="fade-right" >
+            <div class="socials"  >
               <a href="https://www.linkedin.com/in/reza-hossaini-bb5ab614b/" class="items one"><img src="./images/linkedin.png" alt="LinkedIn"></i></a>
               <a href="https://www.xing.com/profile/reza_hosseini15/cv" class="items two"><img src="./images/xing.png" alt="Xing"></i></a>
               <a href="https://www.facebook.com/profile.php?id=100008372049580" class="items three"><img src="./images/fb.png" alt="Fb"></a>
@@ -248,7 +248,7 @@
                   </div>
                 </div>
                 <div class="screen-body-item">
-                  <form class="app-form" id="my-form"  action="https://formspree.io/f/xdobovjk"
+                  <form class="app-form" id="my-form"  data-netlify="true"
                     method="POST">
                     <div class="app-form-group">
                       <input class="app-form-control" placeholder="NAME" type="text" value="" required>
@@ -282,8 +282,8 @@
   <!--========================= Main Layout end ===========================-->
 
   <!--========================= JavaScript  start =========================-->
-  <script src="./js/main.js">
-  </script>
+    <script src="./js/main.js">
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
           AOS.init({
@@ -297,7 +297,7 @@
           debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
           throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
           // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-          offset: 320, // offset (in px) from the original trigger point
+          offset: 520, // offset (in px) from the original trigger point
           delay: 0, // values from 0 to 3000, with step 50ms
           duration: 900, // values from 0 to 3000, with step 50ms
           easing: 'ease', // default easing for AOS animations
@@ -306,6 +306,22 @@
           anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
         });
+    </script>
+
+    <script>
+      document.querySelector("app-form").addEventListener("submit", handleSubmit);
+
+      const handleSubmit = (e) => {
+        e.preventDefault()
+        let myForm = document.getElementById('app-form');
+        let formData = new FormData(myForm)
+        fetch('/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+        }).then(() => console.log('Form successfully submitted')).catch((error) =>
+          alert(error))
+      }
     </script>
   <!--========================= JavaScript  end ===========================-->
 </body>

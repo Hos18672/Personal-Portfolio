@@ -15,7 +15,7 @@ html {
 /*================= Nav Bar menu ===================== */
 .wrapper{
   z-index: 500;
-  background: #000000;
+  background-color: black;
   position: fixed;
   display: block;
   margin: 0 auto;
@@ -134,14 +134,16 @@ nav .content .links{
 .aboutMe {
   display: flex;
   block-size: fit-content;
-  background-color: black;
+  background-image: url("/images/bk4.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
   color: white;
   gap: .3rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 950px;
-  -webkit-box-shadow: 1px 14px 24px -7px #000000; 
+  height: 1100px;
+
 }
 .aboutMe .tag{
   display: grid;
@@ -168,15 +170,15 @@ p{
   height: 550px;
   width: 400px;
   margin: 0 30%;
-  box-shadow:  0px 5px 3px rgb(255, 255, 255);
+  box-shadow:  0px 1.5px 1px rgb(190, 228, 253);
   
 }
 
 .foto:hover{
-  transform: scale(1.02);
+  transform: scale(1.08);
   transition: 1s ease-out ;
-  -webkit-box-shadow: 1px 27px 50px -5px rgba(128, 126, 126, 0.918); 
-  box-shadow: 1px 27px 50px -5px rgba(119, 119, 119, 0.884);
+  -webkit-box-shadow: 1px 27px 50px -5px rgb(39, 39, 39); 
+  box-shadow: 1px 27px 50px -5px rgb(43, 43, 43);
 }
 
 .download {
@@ -691,14 +693,24 @@ p{
 }
 
 /* ================ Contact ================*/
+
+.contact{
+  background-image: url('/images/fbk9.png');
+  background-size: cover;
+  margin-bottom: -1px;
+  margin-left: -.55px;
+  padding-right: 2px;
+  width: 100%;
+}
 .container {
   flex: 0 1 700px;
-  margin: auto;
+  margin:0 auto;
+  margin-top: 90px;
+  width: 100%;
 }
 
 .screen {
   position: relative;
-  background: #000000;
 }
 
 .screen:after {
@@ -709,7 +721,6 @@ p{
   left: 20px;
   right: 20px;
   bottom: 0;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
   z-index: -1;
 }
 
@@ -731,6 +742,8 @@ p{
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-top: 15px;
+  padding-bottom: 5px;
   color: #ff0000;
   text-shadow: 2px 0px 70px red;;
   font-size: 25px;
@@ -752,16 +765,22 @@ p{
   margin-top: auto;
   font-size: 18px;
   color: rgb(255, 255, 255);
+
 }
 
 .app-form-group {
   margin-bottom: 15px;
-
+  color: black;
+}
+.app-form{
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 20px;
 }
 
 .app-form-group.message textarea{
-  color: white;
-  
+  color: rgb(0, 0, 0);
 }
 
 .app-form-group.buttons {
@@ -775,7 +794,7 @@ p{
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: #ddd;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   font-weight: 600;
   outline: none;
@@ -812,8 +831,8 @@ p{
 
 .app-form-button:hover {
   color: #000000;
-  -webkit-box-shadow: 5px 5px 50px 5px rgba(255, 2, 2, 0.671); 
-  box-shadow: 5px 5px 50px 5px rgba(255, 9, 9, 0.959);
+  -webkit-box-shadow: 5px 5px 50px 5px rgba(250, 66, 66, 0.267); 
+  box-shadow: 5px 5px 50px 5px rgba(252, 91, 91, 0.322);
   transform: scale(1.02);
   transition: 0.3s ease-out ;
 }
