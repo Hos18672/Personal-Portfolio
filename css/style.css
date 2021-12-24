@@ -225,11 +225,12 @@ p{
 .work-experience{
   display: grid;
   overflow: hidden;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   text-align: center;
+  padding-top: 50px;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column
 }
 
 .work-experience .tag{
@@ -247,13 +248,13 @@ p{
 .work-experience .tag:hover{
   transform: scale(1.05);
   transition: .5s ease-out ;
-  -webkit-box-shadow: 1px 27px 50px -5px rgba(128, 126, 126, 0.918); 
-  box-shadow: 1px 27px 50px -5px rgba(119, 119, 119, 0.884);
+  -webkit-box-shadow: 1px 27px 50px -5px rgba(128, 126, 126, 0.596); 
+  box-shadow: 1px 27px 50px -5px rgba(119, 119, 119, 0.514);
 }
 
 .work-experience h1{
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 10px;
   text-shadow: 2px 10px 70px rgba(58, 58, 58, 0.507);
 }
 .work-experience .dates{
@@ -269,7 +270,7 @@ p{
   left: -50px;
   font-weight: 500;
   text-shadow: 2px 10px 70px rgb(180, 180, 180);
-  box-shadow: 2px 10px 70px rgb(70, 70, 70);
+  box-shadow: 2px 10px 70px rgba(70, 70, 70, 0.507);
   border-radius: 20px;
   background-color: rgb(0, 0, 0);
 }
@@ -1064,27 +1065,15 @@ p{
   }
 
   .socials{
-     position: relative
-     
+     position: relative   
    }
 
    /*-- Work experiences ---*/
   .work-experience{
     display: flex;
-    flex-direction: column;
+    gap: 60px;
   }
-  .work-experience  div{
-      display: flex;
-      width: 100%;
-      height: 100%;
-      min-width: 100px;
-      flex-direction: column;
-      color: black;
-      max-width: 400px;
-  }
-  .work-experience{
-    display: flex;
-  }
+
   .work-experience  h1{
       color: black;
 
@@ -1119,6 +1108,7 @@ p{
   /* ---- education ---- */
   .education{
       display: flex;
+      gap: 60px;
   
   }
   .education  h1{
@@ -1159,6 +1149,7 @@ p{
   /*--- Projects ---*/
   .porjects{
     display: flex;
+    gap: 60px;
 
   }
   .porjects  h1{
@@ -1311,20 +1302,13 @@ p{
     /*--- work-experience --- */
   .work-experience{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
   }
-  .work-experience  div{
-      display: flex;
-      width: 100%;
-      height: 100%;
-      min-width: 100px;
-      flex-direction: column;
-      color: black;
-      max-width: 400px;
-  }
-  .work-experience{
-    display: flex;
-  }
+
+
   .work-experience  h1{
       margin-top: 30px;
       color: black;
@@ -1596,24 +1580,7 @@ p{
     font-size: 20px;
     text-shadow: 2px 0px 70px  rgb(238, 238, 238);;
   }
-  
-  .work-experience{
-    display: flex;
-    flex-direction: column;
-  }
-  .work-experience  div{
-      display: flex;
-      width: 100%;
-      height: 100%;
-      min-width: 100px;
-      flex-direction: column;
-      color: black;
-      max-width: 100px;
-  }
 
-  .work-experience{
-    display: flex;
-  }
   .work-experience  h1{
       margin-top: 25px;
       color: black;
@@ -1630,9 +1597,10 @@ p{
   }
   .work-experience  div.dates{
     min-width: 220px;
-    max-height: 200px;
-    margin-top: 0;
-    padding-top: -200px;
+      max-height: 200px;
+      margin-top: 0;
+      width: 220px;
+      padding-top: -200px;
   }
   .work-experience .dates p{
     color: rgb(255, 255, 255);
