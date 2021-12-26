@@ -1269,6 +1269,13 @@ p{
     margin-bottom: 10px;
     font-size: 10px;
   }
+
+  .tag{
+    width: 100%;
+  }
+  .hello{
+    margin-bottom: -70px;
+  }
  }
 /* ================ Responsive code 700px end ================ */
 
