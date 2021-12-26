@@ -421,7 +421,8 @@ p{
 .bar-7,
 .bar-8,
 .bar-9,
-.bar-10{
+.bar-10,
+.bar-11{
   background-color: #4fc3f7;
   -webkit-box-shadow: inset 1px -30px 39px 10px #70cffc; 
   box-shadow: inset 1px -30px 39px 10px #05a3ec;
@@ -444,7 +445,9 @@ p{
 .bar-6 img,
 .bar-7 img,
 .bar-8 img,
-.bar-9 img{
+.bar-9 img,
+.bar-10 img,
+.bar-11 img{
   width: 30px;
   padding-top: 5px;
   margin: 0 auto;
@@ -457,7 +460,9 @@ p{
 .bar-6 span,
 .bar-7 span,
 .bar-8 span,
-.bar-9 span{
+.bar-9 span,
+.bar-10 span,
+.bar-11 span{
   position: relative;
   bottom: 7px;
 }
@@ -483,14 +488,19 @@ p{
   width: 70%;
 }
 .bar-8 {
-  width: 60%;
+  width: 50%;
 }
 .bar-9 {
-  width: 80%;
+  width: 50%;
 }
 .bar-10 {
-  width: 70%;
+  width: 30%;
 }
+.bar-11 {
+  width: 80%;
+}
+
+
 
 /* ================  Preojects  ================ */
 .porjects {
