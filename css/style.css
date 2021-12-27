@@ -169,7 +169,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 1000px;
+  height: 900px;
 }
 
 .aboutMe .tag {
@@ -1375,12 +1375,15 @@ p {
     text-align: center;
     align-items: center;
     float: inline-end;
-    margin: 0 auto;
+    margin-bottom: 200px;
   }
 
-  .list-title {
-    font-size: 20px;
-    font-weight: 500;
+  .socials{
+     transform: translateY(-150%);
+  }
+  .download{
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   h1 {
@@ -1392,6 +1395,7 @@ p {
     font-size: 25px;
   }
 
+  
   /*--- work-experience --- */
 
   .work-experience {
@@ -1589,19 +1593,10 @@ p {
 /* ================ Responsive code 520px start ================ */
 
 @media screen and (max-width: 550px) {
-  .foto {
-    width: 200px;
-    height: auto;
-    text-align: center;
-    align-items: center;
-    float: inline-end;
-    margin: auto;
+  .about-container{
+
   }
 
-  .socials {
-    position: relative;
-    top: 300px;
-  }
 
   h1 {
     position: relative;
@@ -1655,9 +1650,12 @@ p {
     text-align: center;
     align-items: center;
     float: inline-end;
-    margin: auto;
+    margin-bottom: 300px;
   }
 
+  .socials{
+     transform: translateY(-280%);
+  }
   h1 {
     position: relative;
     font-size: 30px;
