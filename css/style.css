@@ -303,10 +303,13 @@ p {
   color: var(--font-Color-white);
   padding-right: 50px;
   margin: 0;
+  display: flex;
   min-width: 300px;
   width: 300px;
   height: 200px;
+  justify-content: center;
   text-align: center;
+  align-items: center;
   position: relative;
   top: -50px;
   left: -50px;
@@ -316,10 +319,34 @@ p {
   background-color: var(--background-Color-black);
 }
 
+
+
+.work-experience .tag2 .dates {
+  color: var(--font-Color-white);
+  padding-right: 50px;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 300px;
+  width: 300px;
+  height: 200px;
+  left: 69%;
+  font-weight: 500;
+  box-shadow: 2px 10px 50px rgba(116, 116, 116, 0.295);
+  border-radius: 20px;
+  background-color: var(--background-Color-black);
+}
+
+.work-experience .tag2 span{
+  position: relative;
+  right: 40%;
+}
+
 .work-experience .dates p {
   color: var(--font-Color-white);
   font-size: 23px;
-  padding: 70px 12px 10px 35px;
+  margin-left: 20%;
+
 }
 
 .work-experience  span {
@@ -403,6 +430,24 @@ p {
   background-color: var(--background-Color-blue);
 }
 
+.education .tag2 .dates {
+  color: var(--font-Color-white);
+  padding-right: 50px;
+  margin: 0;
+  min-width: 300px;
+  width: 305px;
+  height: 200px;
+  text-align: center;
+  position: relative;
+  left: 69%;
+  border-radius: 20px;
+  box-shadow: 2px 10px 70px #29b5f631;
+  background-color: var(--background-Color-blue);
+}
+.education .tag2 span {
+  position: relative;
+  right: 30%;
+}
 .education .dates p {
   color: var(--font-Color-white);
   margin-top: 15%;
@@ -1067,6 +1112,14 @@ p {
     width: 80%;
     max-width: 80%;
   }
+
+  .work-experience .dates p {
+      margin-top: 20%;
+     transform: translateX(-20px);
+  
+  }
+
+
 }
 
 /* ================ Responsive code 1250px end ================ */
@@ -1156,11 +1209,6 @@ p {
     text-align: center;
     margin: auto;
   }
-
-  .socials {
-    position: relative;
-  }
-
   /*-- Work experiences ---*/
 
   .work-experience {
@@ -1176,10 +1224,24 @@ p {
     flex-direction: column;
   }
 
+  .work-experience .tag2 .dates {
+     width: 400px;
+    position: relative;
+    transform: translateX(-64%);
+  }
+  
+  .work-experience .tag2 span{
+    position: relative;
+    right: 0%;
+  }
+  
+  
   .work-experience  div.dates {
     min-width: 400px;
     max-height: 200px;
     margin-top: 0;
+    align-items: center;
+    text-align: center;
     padding-top: -200px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -1187,11 +1249,14 @@ p {
 
   .work-experience .dates p {
     font-size: 35px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    position: relative;
+    left: 15px;
   }
 
+  .d2{
+    min-width: 400px;
+    margin: 0;
+  }
   /* ---- education ---- */
 
   .education {
@@ -1221,6 +1286,19 @@ p {
     text-align: center;
     margin-top: 30px;
   }
+
+
+  .education .tag2 .dates {
+    width: 400px;
+   position: relative;
+   transform: translateX(-64%);
+ }
+ 
+ .education .tag2 span{
+   position: relative;
+   right: 0%;
+ }
+ 
 
   /*-- Skills ---*/
 
@@ -1429,10 +1507,17 @@ p {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
   }
+  
+  .work-experience .tag2 .dates {
+    width: 200px;
+   position: relative;
+
+   transform: translateX(-62%);
+ }
 
   .work-experience .dates p {
     font-size: 25px;
-    margin-left: 5%;
+
   }
 
   /* --- education ---- */
@@ -1468,6 +1553,11 @@ p {
     margin-left: 5%;
   }
 
+  .education .tag2 .dates {
+   width: 200px;
+   position: relative;
+   transform: translateX(-62%);
+ }
   .education span {
     padding-left: -55px;
   }
@@ -1597,10 +1687,6 @@ p {
 /* ================ Responsive code 520px start ================ */
 
 @media screen and (max-width: 550px) {
-  .about-container{
-
-  }
-
 
   h1 {
     position: relative;
@@ -1690,11 +1776,26 @@ p {
     padding-top: -200px;
   }
 
-  .work-experience .dates p {
-    font-size: 25px;
-    margin-left: 15%;
+  .work-experience .tag2  .dates {
+    min-width: 20px;
+    max-height: 200px;
+    margin-top: 0;
+    width: 220px;
     position: relative;
+    left: 87px;
+    padding-top: -200px;
+  }
+
+  .work-experience .dates p {
+    width: 200px;
+    font-size: 25px;
+    transform: translateX(-10px);
+    top: 5%;
     bottom: 10%;
+  }
+  .d2{
+    min-width: 200px;
+    margin: 0;
   }
 
   /* education */
@@ -1727,6 +1828,15 @@ p {
     margin-left: 17%;
     position: relative;
     bottom: 10%;
+  }
+  .education .tag2  .dates {
+    min-width: 20px;
+    max-height: 200px;
+    margin-top: 0;
+    width: 220px;
+    position: relative;
+    left: 87px;
+    padding-top: -200px;
   }
 
   .education span {
