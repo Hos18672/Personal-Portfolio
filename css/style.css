@@ -257,7 +257,8 @@ p {
 }
 
 .courved-aboutme{
-  transform: translateX(-2px);
+  position: relative;
+  bottom: 30px;
 
 }
 /*=================  Work Experience =================  */
