@@ -262,7 +262,20 @@ p {
 
 }
 /*=================  Work Experience =================  */
-
+.Experience_lable{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 350px;
+  color: rgba(165, 165, 165, 0.144);
+  transform: translateY(1600px);
+  user-select: none;
+}
 .work-experience {
   display: grid;
   overflow: hidden;
@@ -271,6 +284,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 1
 }
 
 .work-experience .tag {
@@ -357,6 +371,20 @@ p {
 
 /* ================= Education  =================*/
 
+.education_lable{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 350px;
+  color: rgba(165, 165, 165, 0.144);
+  transform: translateY(2650px);
+  user-select: none;
+}
 .education {
   display: grid;
   overflow: hidden;
@@ -463,7 +491,20 @@ p {
 }
 
 /*  ================= Skills  ================= */
-
+.skills_lable{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 350px;
+  color: rgba(165, 165, 165, 0.144);
+  transform: translateY(3650px);
+  user-select: none;
+}
 .skills {
   color: var(--font-Color-black);
   background-color: var(--background-Color-White);
@@ -487,8 +528,7 @@ p {
 .bar-holder {
   width: 80%;
   max-width: 50%;
-  -webkit-box-shadow: inset 0px 40px 37px -2px rgba(141, 141, 141, 0.38);
-  box-shadow: inset 0px 40px 37px -2px rgba(117, 117, 117, 0.38);
+  box-shadow: inset 0px 40px 35px 10px rgb(158, 158, 158);
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -602,6 +642,20 @@ p {
 
 /* ================  Preojects  ================ */
 
+.projects_lable{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 350px;
+  color: rgba(165, 165, 165, 0.144);
+  transform: translateY(4760px);
+  user-select: none;
+}
 .porjects {
   display: grid;
   overflow: hidden;
@@ -1038,6 +1092,7 @@ p {
     width: 70%;
     max-width: 70%;
   }
+  
 }
 
 /* ================ Responsive code 1250px start ================ */
@@ -1048,6 +1103,21 @@ p {
     padding: 0 20px;
   }
 
+   .Experience_lable{
+    top: 5%;
+  }
+  
+  .education_lable
+    {
+    top: 2%;
+  }
+
+  .skills_lable{
+    top: 1%;
+    }
+    .projects_lable{
+      top: 2%;
+    }
   /*--- Nav bar --- */
 
   nav .content .links {
@@ -1132,6 +1202,22 @@ p {
     padding: 0 50px;
   }
 
+  
+  .Experience_lable{
+    top: 10%;
+  }
+  
+  .education_lable
+    {
+    top: 30%;
+  }
+
+  .skills_lable{
+    top: 40%;
+    }
+    .projects_lable{
+      top: 60%;
+    }
   /*-- Nav bar ---*/
 
   .menu-btn {
