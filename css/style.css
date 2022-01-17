@@ -43,6 +43,8 @@ html {
   margin: auto;
 }
 
+
+
 /* ------------ navbar styling ----------- */
 
 .navbar {
@@ -161,7 +163,19 @@ html {
 .aboutMe {
   display: flex;
   block-size: fit-content;
-  background-color: var(--background-Color-black);
+  background:-moz-radial-gradient(circle at 10% 11%, rgba(31, 40, 150, 1) 1%, rgba(0, 0, 0, 1) 60%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 10% 11%, rgba(31, 40, 150, 1) 1%, rgba(0, 0, 0, 1) 60%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 10% 11%, rgba(31, 40, 150, 1) 1%, rgba(0, 0, 0, 1) 60%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 10% 11%, rgba(31, 40, 150, 1) 1%, rgba(0, 0, 0, 1) 60%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 10% 11%, rgba(31, 40, 150, 1) 1%, rgba(0, 0, 0, 1) 60%);
   background-repeat: no-repeat, repeat;
   background-size: cover;
   color: var(--font-Color-white);
@@ -169,7 +183,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 900px;
+  height: 100vh;
 }
 
 .aboutMe .tag {
@@ -186,7 +200,7 @@ h1 {
   justify-content: right;
   position: relative;
   font-size: 70px;
-  text-shadow: 2px 0px 70px rgb(238, 238, 238);
+  text-shadow: 2px 0px 20px rgba(238, 238, 238, 0.575);
 }
 
 p {
@@ -262,20 +276,10 @@ p {
 
 }
 /*=================  Work Experience =================  */
-.Experience_lable{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  margin: 0 auto;
-  overflow: hidden;
-  font-size: 350px;
-  color: rgba(165, 165, 165, 0.144);
-  transform: translateY(1600px);
-  user-select: none;
-}
+
+
+
+
 .work-experience {
   display: grid;
   overflow: hidden;
@@ -284,7 +288,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 1
+  z-index: 1;
 }
 
 .work-experience .tag {
@@ -309,9 +313,9 @@ p {
 }
 
 .work-experience h1 {
-  padding-top: 20px;
-  padding-bottom: 10px;
+  text-align: center;
   text-shadow: 2px 10px 70px rgba(58, 58, 58, 0.507);
+  margin-top: 30px;
 }
 
 .work-experience .dates {
@@ -331,7 +335,21 @@ p {
   font-weight: 500;
   box-shadow: 2px 10px 50px rgba(116, 116, 116, 0.295);
   border-radius: 20px;
-  background-color: var(--background-Color-black);
+  background:-moz-radial-gradient(circle at 47% 19%, rgba(20, 25, 87, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 47% 19%, rgba(20, 25, 87, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 47% 19%, rgba(20, 25, 87, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 47% 19%, rgba(20, 25, 87, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 47% 19%, rgba(20, 25, 87, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+
 }
 
 
@@ -371,20 +389,7 @@ p {
 
 /* ================= Education  =================*/
 
-.education_lable{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  margin: 0 auto;
-  overflow: hidden;
-  font-size: 350px;
-  color: rgba(165, 165, 165, 0.144);
-  transform: translateY(2650px);
-  user-select: none;
-}
+
 .education {
   display: grid;
   overflow: hidden;
@@ -393,6 +398,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
 .education .dates {
@@ -420,8 +426,9 @@ p {
 
 .education h1 {
   color: var(--background-Color-black);
-  padding-top: 50px;
+  text-align: center;
   text-shadow: 2px 10px 70px rgba(58, 58, 58, 0.466);
+  margin-top: 30px;
 }
 
 .education .tag {
@@ -456,7 +463,20 @@ p {
   position: relative;
   border-radius: 20px;
   box-shadow: 2px 10px 70px #29b5f631;
-  background-color: var(--background-Color-blue);
+  /* ff 3.6+ */
+  background:-moz-radial-gradient(circle at 49% 53%, rgba(2, 133, 210, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 49% 53%, rgba(2, 133, 210, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 49% 53%, rgba(2, 133, 210, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 49% 53%, rgba(2, 133, 210, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 49% 53%, rgba(2, 133, 210, 1) 0%, rgba(7, 58, 187, 1) 100%);
 }
 
 .education .tag2 .dates {
@@ -522,6 +542,7 @@ p {
   color: var(--font-Color-black);
   padding-top: 85px;
   padding-bottom: 30px;
+  margin-top: 30px;
   text-shadow: 2px 0px 70px rgba(46, 46, 46, 0.493);
 }
 
@@ -642,20 +663,8 @@ p {
 
 /* ================  Preojects  ================ */
 
-.projects_lable{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  margin: 0 auto;
-  overflow: hidden;
-  font-size: 350px;
-  color: rgba(165, 165, 165, 0.144);
-  transform: translateY(4760px);
-  user-select: none;
-}
+
+
 .porjects {
   display: grid;
   overflow: hidden;
@@ -770,7 +779,26 @@ p {
 .arrow-g {
   margin-right: 15px;
 }
+.contact{
+   /* ff 3.6+ */
+   background:-moz-radial-gradient(circle at 0% 0%, rgba(0, 9, 97, 1) 0%, rgba(2, 0, 16, 1) 100%);
 
+   /* safari 5.1+,chrome 10+ */
+   background:-webkit-radial-gradient(circle at 0% 0%, rgba(0, 9, 97, 1) 0%, rgba(2, 0, 16, 1) 100%);
+
+   /* opera 11.10+ */
+   background:-o-radial-gradient(circle at 0% 0%, rgba(0, 9, 97, 1) 0%, rgba(2, 0, 16, 1) 100%);
+
+   /* ie 10+ */
+   background:-ms-radial-gradient(circle at 0% 0%, rgba(0, 9, 97, 1) 0%, rgba(2, 0, 16, 1) 100%);
+
+   /* global 92%+ browsers support */
+   background:radial-gradient(circle at 0% 0%, rgba(0, 9, 97, 1) 0%, rgba(2, 0, 16, 1) 100%);
+}
+.contact .container{
+  display: flex;
+  flex-direction: column;
+}
 .content .m {
   padding-top: 5px;
   display: flex;
@@ -819,7 +847,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: 3% 10%;
-  background-color: var(--background-Color-black);
+
   color: var(--font-Color-white);
 }
 
@@ -1204,12 +1232,12 @@ p {
 
   
   .Experience_lable{
-    top: 10%;
+    top: 35%;
   }
   
   .education_lable
     {
-    top: 30%;
+    top: 80%;
   }
 
   .skills_lable{
@@ -1555,10 +1583,7 @@ p {
     margin-bottom: 10px;
   }
 
-  h1 {
-    position: relative;
-    font-size: 30px;
-  }
+
 
   p {
     font-size: 25px;
@@ -1775,10 +1800,7 @@ p {
 
 @media screen and (max-width: 550px) {
 
-  h1 {
-    position: relative;
-    font-size: 30px;
-  }
+
 
   p {
     font-size: 20px;
@@ -1833,19 +1855,14 @@ p {
   .socials{
      transform: translateY(-280%);
   }
-  h1 {
-    position: relative;
-    font-size: 30px;
-  }
 
+  h1{
+    font-size: 40px;
+  }
   p {
     font-size: 20px;
   }
 
-  .work-experience  h1 {
-    margin-top: 25px;
-    font-size: 30px;
-  }
 
   .work-experience .tag {
     display: flex;
@@ -1886,10 +1903,6 @@ p {
   }
 
   /* education */
-
-  .education  h1 {
-    font-size: 30px;
-  }
 
   .education  .tag {
     display: flex;
@@ -1932,9 +1945,7 @@ p {
     padding: 0;
   }
 
-  .skills h1 {
-    font-size: 30px;
-  }
+
 
   /*--- Projects ---*/
 
