@@ -207,6 +207,7 @@ p {
   font-size: 30px;
 }
 
+
 .foto {
   display: flex;
   align-items: center;
@@ -303,6 +304,17 @@ p {
   border-radius: 20px;
   background-color: var(--background-Color-White);
   box-shadow: 2px 5px 15px rgba(167, 163, 163, 0.342);
+  transform-style: preserve-3d;
+  transform-origin:center;
+  transform:perspective(1000px) rotateY(15deg);
+  transition:0.5s;
+}
+
+.work-experience .tag2 {
+  transform-style: preserve-3d;
+  transform-origin:center;
+  transform:perspective(1200px) rotateY(-10deg);
+  transition:0.5s;
 }
 
 .work-experience .tag:hover {
@@ -443,7 +455,18 @@ p {
   border-radius: 20px;
   background-color: var(--background-Color-White);
   box-shadow: 2px 5px 15px rgba(167, 163, 163, 0.342);
+  transform-style: preserve-3d;
+  transform-origin:center;
+  transform:perspective(1000px) rotateY(15deg);
+  transition:0.5s;
 }
+
+.education  .tag2 {
+  transform-style: preserve-3d;
+  transform-origin:center;
+  transform:perspective(1200px) rotateY(-10deg);
+  transition:0.5s;
+  }
 
 .education .tag:hover {
   transform: scale(1.03);
@@ -582,7 +605,7 @@ p {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   height: 40px;
-  text-align: center;
+  text-align: left;
   font-size: 25px;
 }
 
@@ -599,7 +622,8 @@ p {
 .bar-11 img {
   width: 30px;
   padding-top: 5px;
-  margin: 0 auto;
+  position: relative;
+  left: 20px;
 }
 
 .bar-1 span,
@@ -614,6 +638,7 @@ p {
 .bar-10 span,
 .bar-11 span {
   position: relative;
+  left: 20px;
   bottom: 7px;
 }
 
@@ -743,6 +768,10 @@ p {
   border-radius: 20px;
   background-color: var(--background-Color-White);
   box-shadow: 2px 5px 15px rgba(167, 163, 163, 0.342);
+  transform-style: preserve-3d;
+  transform-origin:center;
+  transform:perspective(1000px) rotateY(10deg);
+  transition:0.5s;
 }
 
 .porjects .porject-tag:hover {
