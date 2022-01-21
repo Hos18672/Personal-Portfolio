@@ -794,6 +794,22 @@ p {
   text-decoration: none;
 }
 
+
+.porjects .project-item .cal-img {
+  width: 305px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+
+
+.cal-container .icon4{
+   position: relative;
+   left: 30%;
+}
+.cal-container{
+  margin-right: 30%;
+}
 #arrow {
   font-size: 30px;
   padding-top: 2px;
@@ -1496,6 +1512,22 @@ p {
     width: 80%;
     height: 100%;
   }
+  .cal-container{
+    margin-right: 0%;
+  }
+
+  .porject-tag .content .cal-container .icon4{
+    position: absolute; 
+    left: 0%;
+  }
+  .porjects .project-item .cal-img {
+    width: 115%;
+    height: 220px;
+    border-radius: 15px;
+  }
+  .link-git{
+    margin-top: 30px;
+  }  
 
   #arrow {
     font-size: 30px;
@@ -1790,6 +1822,12 @@ p {
     height: 100%;
   }
 
+  .porjects .project-item .cal-img {
+    width: 120%;
+    height: 220px;
+    border-radius: 15px;
+  }
+  
   .porjects .project-item .graph-img {
     width: 100%;
     height: 100%;
@@ -2011,6 +2049,12 @@ p {
     height: 100%;
   }
 
+  .porjects .project-item .cal-img {
+    width: 130%;
+    height: 200px;
+    border-radius: 15px;
+  }
+  
   .porjects .fn-item {
     height: 140px;
   }
